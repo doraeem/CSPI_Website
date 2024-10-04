@@ -6,11 +6,7 @@ body {
     position:relative;
 }
 
-/* main {
-    padding: 20px; 
-    background-color: #f9f9f9; 
-    border-radius: 5px; 
-} */
+
 body::before {
     content: '';
     position: absolute;
@@ -18,7 +14,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/Applications/XAMPP/xamppfiles/htdocs/CSPI/cspi.jpeg'); 
+    background-image: url('cspi.jpeg'); 
     background-size: cover; /* Cover the whole body */
     background-position: center; /* Center the image */
     opacity: 0.1; /* Adjust for desired shadow effect */
@@ -50,7 +46,7 @@ footer .facebook-logo {
     vertical-align: middle; /* Align with text */
     margin-right: 5px; /* Space between logo and text */
 }
-/* base.css or a main CSS file */
+
 
 html, body {
     height: 100%; /* Ensure full height */
