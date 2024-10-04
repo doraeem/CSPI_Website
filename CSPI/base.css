@@ -16,7 +16,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/Applications/XAMPP/xamppfiles/htdocs/CSPI/cspi.jpeg'); 
+    background-image: url('cspi.jpeg'); 
     background-size: cover; /* Cover the whole body */
     background-position: center; /* Center the image */
     opacity: 0.1; /* Adjust for desired shadow effect */
