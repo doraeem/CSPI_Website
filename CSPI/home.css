@@ -1,0 +1,97 @@
+/* home.css */
+@import url('base.css');
+
+.hero {
+    background: #c3c4a0;
+    color: #084a7a;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 4px solid #8b8f62;
+   
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.service-item {
+    margin: 20px 0;
+}
+
+.service-item h4 {
+    font-size: 1.5em;
+    color: #2980b9;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: #2c3e50;
+        color: #ecf0f1;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+header .logo {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Space between logo and heading */
+}
+footer .social-link {
+    color: #ecf0f1; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+footer .social-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+footer .facebook-logo {
+    width: 15px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align with text */
+    margin-right: 5px; /* Space between logo and text */
+}
+/* base.css or a main CSS file */
+
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0; /* Remove default margins */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Centre for Strategy and Policy Innovation</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.jpeg" alt="CSPI Logo" class="logo">
+            <h1>Centre for Strategy and Policy Innovation</h1>
+            <button class="menu-toggle">Menu</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="research.html">Projects</a></li>
+                    <li><a href="consulting.html">Publications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="partnership.html">Programmes</a></li>
+                    <li><a href="newsroom.html">News Room</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>For inquiries about our research, services, or training, feel free to contact us below.</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <a href="https://www.facebook.com/profile.php?id=61555658410839&mibextid=ZbWKwL" target="_blank" class="social-link">
+                <img src="fb.png" alt="Facebook Logo" class="facebook-logo">Centre for Strategy and Policy Innovation </a>
+        </p>
+        <p>&copy; 2024 Centre for Strategy and Policy Innovation</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* base.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+    height: 100vh; /* Set full height */
+    overflow-y: auto; /* Allow vertical scrolling */
+    position: relative;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/Applications/XAMPP/xamppfiles/htdocs/CSPI/cspi.jpeg'); 
+    background-size: cover; /* Cover the whole body */
+    background-position: center; /* Center the image */
+    opacity: 0.1; /* Adjust for desired shadow effect */
+    z-index: -1; /* Place it behind other content */
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px 0;
+    position: fixed; /* Keeps the header fixed */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Space between logo and heading */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    margin-top: 100px; /* Space for the fixed header */
+    padding-bottom: 60px; /* Space for the fixed footer */
+    overflow-y: auto; /* Allow vertical scrolling within the main area */
+    height: calc(100vh - 160px); /* Adjust for header and footer */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Mobile Menu Toggle Styles */
+.menu-toggle {
+    display: none; /* Hidden by default */
+}
+
+/* Show the menu toggle button in mobile view */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        background-color: #2c3e50;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex; /* Show menu when active */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

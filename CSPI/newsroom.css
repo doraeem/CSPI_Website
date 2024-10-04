@@ -1,0 +1,65 @@
+/* newsroom.css */
+@import url('base.css');
+
+body {
+    background-color: #f4f4f4;
+    position:relative;
+}
+
+/* main {
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 5px; 
+} */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/Applications/XAMPP/xamppfiles/htdocs/CSPI/cspi.jpeg'); 
+    background-size: cover; /* Cover the whole body */
+    background-position: center; /* Center the image */
+    opacity: 0.1; /* Adjust for desired shadow effect */
+    z-index: -1; /* Place it behind other content */
+}
+
+h2 {
+    color: #004c97; /* Header color */
+    font-size: 2em; /* Header size */
+}
+
+header .logo {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Space between logo and heading */
+}
+footer .social-link {
+    color: #ecf0f1; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+footer .social-link:hover {
+    text-decoration: underline;
+}
+footer .facebook-logo {
+    width: 15px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align with text */
+    margin-right: 5px; /* Space between logo and text */
+}
+/* base.css or a main CSS file */
+
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0; /* Remove default margins */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+main {
+    min-height: calc(100vh - 100px); /* Adjust this based on your header/footer height */
+    padding: 20px; /* Add padding for content */
+}
+
+

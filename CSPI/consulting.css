@@ -1,0 +1,53 @@
+/* consulting.css */
+@import url('base.css');
+
+.consulting {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.consulting h2 {
+    font-size: 2em;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+.consulting p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+header .logo {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Space between logo and heading */
+}
+footer .social-link {
+    color: #ecf0f1; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+footer .social-link:hover {
+    text-decoration: underline;
+}
+footer .facebook-logo {
+    width: 15px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align with text */
+    margin-right: 5px; /* Space between logo and text */
+}
+/* base.css or a main CSS file */
+
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0; /* Remove default margins */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+main {
+    min-height: calc(100vh - 100px); /* Adjust this based on your header/footer height */
+    padding: 20px; /* Add padding for content */
+}
+
+
